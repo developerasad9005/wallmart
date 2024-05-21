@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+
+        * {
+            font-weight: 600;
+            font-style: normal;
+            font-family: arial;
+        }
+
+        .textareas h1 {
+            font-size: 15px;
+            line-height: 30px;
+            color: #4f4e53f5;;
+            transform: rotate(-1deg);
+        }
+    </style>
+</head>
+
+<body class="bg-[#ddd]">
+    <main>
+        <div class="container mx-auto flex justify-center items-center">
+            <section class="flex flex-col lg:flex-row gap-20 justify-center items-center h-[100vh]">
+                <div class="">
+                    <div class="">
+                        <div class="flex flex-col bg-white rounded shadow-lg p-4">
+                            <h1 class="text-black text-2xl mb-5">Please Update data here</h1>
+                            <label class="font-semibold text-lg mt-3" for="date">First Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="firstPrize" id="firstPrize">
+
+                                <label class="font-semibold text-lg mt-3" for="date">Second Prize Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="secondPrize" id="secondPrize">
+
+                                <label class="font-semibold text-lg mt-3" for="date">Third Prize Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="thirdPrize" id="thirdPrize">
+                                <label class="font-semibold text-lg mt-3" for="date">Fourth Prize Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="fourthPrize" id="fourthPrize">
+                                <label class="font-semibold text-lg mt-3" for="date">Five Prize Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="fivePrize" id="fivePrize">
+                                <label class="font-semibold text-lg mt-3" for="date">Six Prize Prize</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="sixPrize" id="sixPrize">
+                               
+                                <label class="font-semibold text-lg mt-3" for="date">seven Prize Prize</label>
+                                <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="sevenPrize" id="sevenPrize">
+                         
+
+                            <label class="font-semibold text-lg mt-3" for="date">Date</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="date" name="date" id="date">
+                            <!-- <label class="font-semibold text-lg mt-3" for="date">Expire Date</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="date" name="date" id="exDate"> -->
+                            <label class="font-semibold text-lg mt-3" for="appt">Time</label>
+                            <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="time" min="09:00" max="18:00" id="time" name="appt">
+
+
+                            <!-- <select name="" id="selectBg" class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select> -->
+                            <button
+                                class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700"
+                                id="submit">Update</button>
+                                <button
+                                class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700"
+                                id="timepress">Time Change</button>
+                                <!-- <button
+                                class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700"
+                                id="nameChanger">Name Change</button> -->
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="right flex justify-center receptBg h-[850px] w-full items-center" id="receptBackground">
+                    <section class="recept w-full h-full relative">
+                        <img class="w-full h-full relative" src="image/tecoBell.png" alt="">
+                        <!-- <h1 class="font-semibold text-[21px] text-right absolute bottom-[467px] left-[152px] text-[#133253da]"><span id="randomOrder">123456</span>
+                        </h1>
+                         <h1 class="font-semibold text-[21px] text-right absolute bottom-[467px] left-[455px] text-[#133253da]"><span id="nameUpdate">Asad</span>
+                        </h1> --> 
+                   <div class="absolute bottom-[575px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="firstPrizeChange">5</span>
+                            </h1>
+                        </div> 
+                        <div class="absolute bottom-[561px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="secoundPrizeChange">10</span>
+                            </h1>
+                        </div> 
+                        <div class="absolute bottom-[546px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="thirdPrizeChange">15</span>
+                            </h1>
+                        </div> 
+                        <div class="absolute bottom-[530px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="fourthPrizeChange">20</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[516px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="fivePrizeChange">25</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[500px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="sixPrizeChange">8</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[485px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="sevenPrizeChange">25</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[470px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="subtotalChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[455px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="taxoneChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[441px] left-[327px] textareas">
+
+                            <h1 class="font-semibold text-right"><span id="taxtwoChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[426px] left-[327px] textareas">
+
+                            <h1 class="font-bold  text-right"><span id="totalChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[411px] left-[327px] textareas">
+
+                            <h1 class="font-bold  text-right"><span id="tendChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[317px] left-[78px]">
+                            <h1 class="text-[#403e43e6] text-center text-[17px]"><span
+                                    id="dateChange">2024/02/08</span>
+                                <span id="timeChange">7:21 PM</span>
+                            </h1>
+                       <!-- EXPIRES <span id="exDateChange">2024/05/08</span>  --> 
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script> 
+</body>
+
+</html>
